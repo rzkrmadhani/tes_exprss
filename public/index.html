@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Express Neon</title>
+    <style>
+        body {
+            background-color: #050505;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            border: 2px solid #00ff41;
+            padding: 40px;
+            box-shadow: 0 0 20px #00ff41;
+            text-align: center;
+            border-radius: 10px;
+            background: rgba(0, 20, 0, 0.8);
+        }
+        h1 { text-shadow: 0 0 10px #00ff41; }
+        .status {
+            font-size: 24px;
+            color: #00ff41;
+            margin-top: 20px;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink { 50% { opacity: 0; } }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>NODE.JS EXPRESS</h1>
+        <p>DEPLOYMENT AGENT STATUS</p>
+        <hr style="border-color: #00ff41;">
+        <div class="status">● SYSTEM ONLINE</div>
+        <p style="margin-top: 20px; font-size: 12px; opacity: 0.7;">Served via Docker Container</p>
+    </div>
+</body>
+</html>
